@@ -5,7 +5,7 @@
     2. Update CHANGELOG
     3. $ git commit ...
     4. $ git tag -a x.x.x  # see `git tags` for latest
-    5. $ git push origin master
+    5. $ git push origin main
     6. $ git push --tags
     7. $ python setup.py register sdist
     8. $ twine upload dist/*
@@ -14,7 +14,7 @@
 from setuptools import setup, find_packages  # noqa: E402
 
 
-VERSION = '.'.join(('0', '1', '0'))
+VERSION = '.'.join(('0', '1', '1'))
 
 DESCRIPTION = '''An extension of the default TextInput widget that displays a
               read-only string prefix'''

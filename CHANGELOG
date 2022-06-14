@@ -1,6 +1,12 @@
 Changelog
 =========
 
+0.1.1 (June 14th, 2022)
+-----------------------
+
+* Fixed: Corrected manifest to include template/media files.
+
+
 0.1.0 (June 14th, 2022)
 -----------------------
 

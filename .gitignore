@@ -4,3 +4,4 @@
 Thumbs.db
 .DS_Store
 example_project/db.sqlite3
+dist
