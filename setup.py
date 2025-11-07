@@ -14,7 +14,7 @@
 from setuptools import setup, find_packages  # noqa: E402
 
 
-VERSION = ".".join(("1", "0", "0"))
+VERSION = ".".join(("1", "0", "1"))
 
 DESCRIPTION = "An extension of the default TextInput widget that displays a read-only string prefix"  # noqa: E501
 

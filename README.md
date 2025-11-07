@@ -15,7 +15,7 @@ The widget has been tested on all Python/Django version combinations [officially
 | **3.10**       | ✔          | ✔   | ✔   | ✔   |
 | **3.11**       | ✔          | ✔   | ✔   | ✔   |
 | **3.12**       | ✔          | ✔   | ✔   | ✔   |
-| **3.13**       | ✔          |     | ✔   | ✔   |
+| **3.13**       |            |     | ✔   | ✔   |
 | **3.14**       |            |     |     | ✔   |
 
 If you need to use `django-prefixed-textinput` with Django 3, please use a version of the package prior to `1.0.0`.
