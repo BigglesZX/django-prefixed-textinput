@@ -8,8 +8,10 @@ from .models import Book
 class BookAdmin(admin.ModelAdmin):
     form = BookAdminForm
     fieldsets = (
-        (None, {
-            'fields': ('title', 'author', 'product_code',
-                       ('pages', 'isbn_code')),
-        }),
+        (
+            None,
+            {
+                "fields": ("title", "author", "product_code", ("pages", "isbn_code")),
+            },
+        ),
     )

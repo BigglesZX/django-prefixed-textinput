@@ -2,14 +2,14 @@ from django.forms.widgets import TextInput
 
 
 class PrefixedTextInput(TextInput):
-    template_name = 'widget.html'
+    template_name = "widget.html"
 
     class Media:
         css = {
-            'all': ('css/widget.css',),
+            "all": ("css/widget.css",),
         }
 
-    def __init__(self, attrs=None, prefix=''):
+    def __init__(self, attrs=None, prefix=""):
         self.prefix = prefix
         super().__init__(attrs)
 

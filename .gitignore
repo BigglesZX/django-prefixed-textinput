@@ -6,3 +6,4 @@ Thumbs.db
 example_project/db.sqlite3
 dist
 .tox
+__pycache__
