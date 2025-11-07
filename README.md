@@ -6,9 +6,21 @@ An extension of the default `TextInput` widget that displays a read-only string 
 
 ## Compatibility
 
-The widget has been tested on Django 3.2 and 4.0 on Python 3.8, though I expect it to be fairly compatible with other versions given the simplicity of the implementation. For now, the package is marked as requiring Python 3.6 or higher.
+The widget has been tested on all Python/Django version combinations [officially supported](https://docs.djangoproject.com/en/5.2/faq/install/#what-python-version-can-i-use-with-django) by the Django project:
 
-Styling for the widget includes support for right-to-left (RTL) languages so this should work more or less as expected. Note that IE11 is **not** supported as the widget styling requires support for CSS Variables.
+|                | Django 4.2 | 5.0 | 5.1 | 5.2 |
+|---------------:|:----------:|:---:|:---:|:---:|
+| **Python** 3.8 | ✔          |     |     |     |
+| 3.9            | ✔          |     |     |     |
+| 3.10           | ✔          | ✔   | ✔   | ✔   |
+| 3.11           | ✔          | ✔   | ✔   | ✔   |
+| 3.12           | ✔          | ✔   | ✔   | ✔   |
+| 3.13           | ✔          |     | ✔   | ✔   |
+| 3.14           |            |     |     | ✔   |
+
+If you need to use `django-prefixed-textinput` with Django 3, please use a version of the package prior to `1.0.0`.
+
+Styling for the widget includes support for right-to-left (RTL) languages so this should work more or less as expected. Note that IE11 is **not** supported as the widget styling requires support for [CSS Custom Properties](https://caniuse.com/css-variables) ("CSS Variables").
 
 ## Installation
 
@@ -85,10 +97,10 @@ $ open http://localhost:8000/admin/
 
 Navigate to the example `Book` model in the `Bookshop` app to see the widget in action.
 
-To lint with `flake8`:
+Run the extremely basic test suite across environments using `tox`:
 
 ```shell
-$ flake8
+$ tox run
 ```
 
 ## Issues, Suggestions, Contributions
